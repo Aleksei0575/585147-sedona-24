@@ -60,7 +60,8 @@ ul {
 
 .main-navigation-items {
 	display: flex;
-	justify-content: space-around;
+	/*justify-content: space-around;*/
+	flex-wrap: wrap;
 }
 
 .main-navigation {
@@ -70,13 +71,12 @@ ul {
 
 .logo {
 	position: relative;
-	width: 244px;
 }
 
 .logo img {
 	position: absolute;
 	z-index: 2;
-	left: 54px;
+	left: 49px;
 	top: 0px;
 }
 
@@ -88,10 +88,10 @@ ul {
 	display: inline-block;
 
 	padding-top: 15px;
-    padding-right: 68px;
-    padding-bottom: 15px;
-    padding-left: 73px;
-	min-width: 98px;
+	padding-right: 55px;
+	padding-bottom: 15px;
+	padding-left: 55px;
+	min-width: 130px;
 	/*border-radius: 50px;*/
 
 	text-align: center;
@@ -129,5 +129,12 @@ ul {
 }
 
 .main-header {
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 }
+
+.promo-block-title {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.promo-block
