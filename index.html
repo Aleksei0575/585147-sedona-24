@@ -4,27 +4,38 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta name="keywords" content="седона, городок, штат, аризона, отдых, отель, гостиницы, достопримечательности, туризм">
 		<meta name="description" content="седона настоящий райский уголок для туризма и отдыха посреди аризонской пустыни">
 	</head>
 	<body>
+		<!-- Контейнер центровщик и на нем тень -->
+		<div class="container">
 		<!-- Шапка сайта - главное меню -->
-		<header class="main-header container">
+		<header class="main-header">
 			<nav class="main-navigation">
 				<ul class="main-navigation-items">
 					<li class="navigation-item info"><a href="info.html">Информация</a></li>
 					<li class="navigation-item gallery"><a href="gallery.html">Фото и видео</a></li>
 					<li class="navigation-item logo">
-						<a href="index.html">
-							<img src="img/logo.svg" width="140" height="71" alt="Логотип сайта">
-						</a>
+						<img src="img/logo.svg" width="140" height="71" alt="Логотип сайта">
 					</li>
 					<li class="navigation-item map"><a href="map.html">Карта штата</a></li>
 					<li class="navigation-item hotels"><a href="hotels.html">Гостиницы</a></li>
 				</ul>
 			</nav>
+			<div class="header-image">
+				<img src="img/welcome.svg" width="459" height="353" alt="Рекламное приветствие города Седона">
+			</div>
 		</header>
-
+		<main class="main-content">
+			<section class="promo-block">
+				<h1 class="promo-block-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h1>
+				<p class="advantage">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			</section>
+		</main>
+		</div>
 
 
 	</body>
