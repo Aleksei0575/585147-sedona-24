@@ -55,6 +55,8 @@ ul {
 	padding: 0;
 	margin: 0 auto;
 	width: 1200px;
+	
+	background-color: #ffffff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -65,7 +67,6 @@ ul {
 }
 
 .main-navigation {
-
 	background-color: #ffffff;
 }
 
@@ -92,7 +93,6 @@ ul {
 	padding-bottom: 15px;
 	padding-left: 55px;
 	min-width: 130px;
-	/*border-radius: 50px;*/
 
 	text-align: center;
 	vertical-align: middle;
@@ -110,6 +110,7 @@ ul {
 .header-image {
 	position: relative;
 	
+	background-color: #6e95bb;
 	background-image: url("../img/background-photo-big.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 -83px;
@@ -118,7 +119,7 @@ ul {
 .header-image::after {
 	content: "";
 	position: absolute;
-	/*z-index: 10;*/
+	
 	bottom: -2px;
 	left: 0px;
 	width: 1200px;
@@ -132,9 +133,199 @@ ul {
 	margin-bottom: 60px;
 }
 
+/*Начало блока преимуществ*/
 .promo-block-title {
 	font-size: 21px;
 	line-height: 26px;
 }
 
-.promo-block
+.promo-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.promo-block-title {
+	width: 440px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 26px;
+	
+	text-align: center;
+	vertical-align: middle;
+}
+
+.advantage {
+	width: 489px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 51px;
+	
+	font-weight: normal;
+	line-height: 26px;
+	color: #333333;
+}
+
+.advantage-list h3,
+.advantage-list p {
+	margin: 0;
+	padding: 0;
+}
+
+.advantage-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.description {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	
+	width: 300px;
+	padding: 0 50px;
+	
+	text-align: center;
+}
+
+.first-advantage, 
+.second-advantage {
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+.third-advantage,
+.fourth-advantage,
+.fifth-advantage {
+	background-color: #eeeeee;
+}
+
+.description h3 {
+	font-size: 21px;
+}
+
+.description span,
+.description p {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.description .city,
+.description .bridge {
+	width: 125px;
+	margin-top: -13px;
+	margin-bottom: 24px;
+}
+
+.description .number {
+	margin-bottom: 22px;
+}
+
+.first-advantage-img,
+.second-advantage-img {
+	height: 256px;
+}
+
+.detailed-first .hotels,
+.detailed-second .food,
+.detailed-third .souvenirs {
+	position: relative;
+	padding-top: 161px;
+	margin-bottom: 24px;
+}
+
+.detailed-first .hotels::before {
+	content: "";
+
+	position: absolute;
+	top: 60px;
+	left: -4px;
+
+	width: 75px;
+	height: 72px;
+
+	background-image: url("../img/icon-1.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.detailed-second .food::before {
+	content: "";
+
+	position: absolute;
+	top: 60px;
+	left: -18px;
+
+	width: 74px;
+	height: 70px;
+
+	background-image: url("../img/icon-3.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.detailed-third .souvenirs::before {
+	content: "";
+
+	position: absolute;
+	top: 56px;
+	left: 19px;
+
+	width: 64px;
+	height: 74px;
+
+	background-image: url("../img/icon-2.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.detailed-first .advantage-description-hotels,
+.detailed-second .advantage-description-food,
+.detailed-third .advantage-description-souvenirs {
+	margin-bottom: 82px;
+}
+
+.description .bridge {
+	width: 151px;
+}
+
+.second-advantage p {
+	width: 303px;
+}
+
+.third-advantage .advantage-title,
+.fourth-advantage .advantage-title,
+.fifth-advantage .advantage-title {
+	width: 125px;
+	margin-top: 47px;
+	margin-bottom: 24px;
+}
+
+.third-advantage p {
+	width: 208px;
+}
+
+.fourth-advantage p {
+	width: 262px;
+}
+
+.fifth-advantage p {
+	width: 247px;
+}
+
+.third-advantage .advantage-description,
+.fourth-advantage .advantage-description,
+.fifth-advantage .advantage-description {
+	margin-bottom: 47px;
+}
+
+
+
+
+
+
+
+
+
