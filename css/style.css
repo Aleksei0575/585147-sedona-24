@@ -165,7 +165,7 @@ ul {
 	line-height: 26px;
 	color: #333333;
 }
-
+/*Преимущества*/
 .advantage-list h3,
 .advantage-list p {
 	margin: 0;
@@ -318,7 +318,253 @@ ul {
 .third-advantage .advantage-description,
 .fourth-advantage .advantage-description,
 .fifth-advantage .advantage-description {
-	margin-bottom: 47px;
+	margin-bottom: 58px;
+}
+
+.advantage-block {
+	margin-bottom: 50px;
+}
+
+/*Блок с формой поиска*/
+.search-hotels {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	position: relative;
+}
+
+.search-hotels-title {
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.search-hotels h2,
+.search-hotels p {
+	margin: 0;
+	padding: 0;
+}
+
+.search-hotels .search-hotels-title {
+	width: 434px;
+	margin-bottom: 25px;
+	
+	text-align: center;
+	vertical-align: middle;
+}
+
+.search-hotels .travel-dates {
+	width: 435px;
+
+	margin-bottom: 46px;
+	
+	font-weight: normal;
+	line-height: 24px;
+	text-align: center;
+	vertical-align: middle;
+	color: #333333;
+}
+
+.search-hotels .button {
+	display: inline-block;
+	
+	padding-top: 30px;
+	padding-right: 140px;
+	padding-bottom: 30px;
+	padding-left: 140px;
+	min-width: 290px;
+	
+	text-align: center;
+	vertical-align: middle;
+	
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #ffffff;
+	background-color: #766357;
+}
+
+/*Стилизация формы*/
+.user-search-form {
+	width: 568px;
+	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.search-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.entry-form {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	line-height: 26px;
+}
+
+.arrival-input {
+	margin-top: 55px;
+	margin-bottom: 29px;
+}
+
+.entry-form-arrival {
+	padding-right: 18px;
+}
+
+.entry-form-departure {
+	padding-right: 18px;
+}
+
+.quantity {
+	width: 38px;
+}
+
+.arrival-date,
+.departure-date {
+	box-sizing: border-box;
+	padding: 0;
+	border: 0;
+	width: 349px;
+	height: 38px;
+
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+	background-color: #f2f2f2;
+}
+
+.arrival-date {
+	padding-left: 15px;
+}
+
+.departure-date {
+	padding-left: 13px;
+}
+
+.calendar {
+	position: absolute;
+	top: 7px;
+	right: 5px;
+	background-color: transparent;
+	border: none;
+}
+
+.departure {
+	margin-bottom: 30px;
+}
+
+.booking-people {
+	display: flex;
+	margin-bottom: 54px;
+}
+
+.booking-people label {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.quantity {
+	box-sizing: border-box;
+	border: 0;
+	width: 38px;
+	height: 38px;
+
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	color: #000000;
+	background-color: #f2f2f2;
+}
+
+.button-minus-adults,
+.button-plus-adults,
+.button-minus-child,
+.button-plus-child {
+	background-color: transparent;
+	border: none;
+}
+
+.button-minus-adults {
+	padding: 0;
+	width: 38px;
+	height: 38px;
+
+	background-color: #f2f2f2;
+}
+
+.button-plus-adults {
+	padding: 0;
+	width: 38px;
+	height: 38px;
+
+	background-color: #f2f2f2;
+	margin-right: 30px;
+}
+
+.choice-adults {
+	padding-right: 41px;
+}
+
+.choice-child {
+	padding-right: 27px;
+}
+
+.button-minus-child {
+	padding: 0;
+	width: 38px;
+	height: 38px;
+	
+	background-color: #f2f2f2;
+}
+
+.button-plus-child {
+	padding: 0;
+	width: 38px;
+	height: 38px;
+	
+	background-color: #f2f2f2;
+}
+
+.booking-people .button-plus-adults {
+	margin-right: 53px;
+}
+
+.button-submit {
+	margin-left: 55px;
+}
+
+.button-submit {
+	display: inline-block;
+	
+	padding-top: 16px;
+	padding-right: 196px;
+	padding-bottom: 16px;
+	padding-left: 196px;
+	min-width: 65px;
+	
+	text-align: center;
+	vertical-align: middle;
+	
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: #ffffff;
+	
+	background-color: #81b3d2;
+	border: none;
+}
+
+
+
+.button-form button{
+	margin-bottom: 55px;
 }
 
 
@@ -329,3 +575,25 @@ ul {
 
 
 
+
+
+
+/*.social-btn span {
+	display: none;
+}*/
+
+.main-footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	position: relative;
+
+	padding: 0;
+	margin-bottom: 0px;
+	margin-top: -54px;
+	z-index: 10;
+	background: rgba(255, 255, 255, 0.9);
+}
