@@ -55,7 +55,7 @@ ul {
 	padding: 0;
 	margin: 0 auto;
 	width: 1200px;
-	
+	overflow: hidden;
 	background-color: #ffffff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -561,17 +561,165 @@ ul {
 	border: none;
 }
 
-
-
 .button-form button{
 	margin-bottom: 55px;
 }
 
+.main-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	position: relative;
 
+	padding: 0;
+	margin-bottom: 0px;
+	margin-top: -127px;
+	z-index: 10;
+	background: rgba(255, 255, 255, 0.9);
+}
 
+.hashtag {
+	padding-top: 46px;
+	padding-bottom: 51px;
+	
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+}
 
+.hashtag p {
+	margin: 0;
+	margin-left: 132px;
+	/*width: 392px;*/
+}
 
+/*.footer-social {
+	text-align: center;
+}*/
 
+.footer-social {
+	width: 151px;
+	margin-right: -28px;
+}
+
+.social-btn {
+	color: #ffffff;
+}
+
+.social-btn-tw {
+	position: relative;
+	display: inline-block;
+	
+	width: 46px;
+	height: 48px;
+	
+	background-color: #81b3d2;
+	margin-right: 3px;
+}
+
+/*.social-btn-vk:hover {
+	background-color: #ee3643;
+}*/
+
+.social-btn-tw::before {
+	content: "";
+	position: absolute;
+	top: 17px;
+	left: 15px;
+	width: 17px;
+	height: 15px;
+	background-image: url("../img/t.svg");
+	background-repeat: no-repeat;
+}
+
+.social-btn-vk {
+	position: relative;
+	display: inline-block;
+	
+	width: 46px;
+	height: 48px;
+	
+	background-color: #81b3d2;
+	margin-right: 2px;
+}
+
+/*.social-btn-fb:hover {
+	background-color: #ee3643;
+}*/
+
+.social-btn-vk::before {
+	content: "";
+	position: absolute;
+	top: 13px;
+	left: 16px;
+	width: 12px;
+	height: 22px;
+	background-image: url("../img/fb-icon.svg");
+	background-repeat: no-repeat;
+}
+
+.social-btn-tube {
+	position: relative;
+	display: inline-block;
+
+	width: 46px;
+	height: 48px;
+	
+	background-color: #81b3d2;
+}
+
+/*.social-btn-inst:hover {
+	background-color: #ee3643;
+}*/
+
+.social-btn-tube::before {
+	content: "";
+	position: absolute;
+	top: 17px;
+	left: 13px;
+	width: 20px;
+	height: 16px;
+	background-image: url("../img/youtube.svg");
+	background-repeat: no-repeat;
+}
+
+.social-btn span {
+	display: none;
+}
+
+.footer-copyright {
+	display: flex;
+	align-items: center;
+	margin-right: 100px;
+}
+
+.developer {
+	line-height: 26px;
+	font-weight: normal;
+	margin-right: 8px;
+
+	/*text-transform: uppercase;*/
+	/*color: #000000;*/
+}
+
+/* Блок обратной связи */
+.footer-contacts-mail {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
+	-webkit-box-align: start;
+		-ms-flex-align: start;
+			align-items: center;
+	/*text-align: right;
+	padding-top: 4px;*/
+}
 
 
 
@@ -582,18 +730,3 @@ ul {
 	display: none;
 }*/
 
-.main-footer {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	position: relative;
-
-	padding: 0;
-	margin-bottom: 0px;
-	margin-top: -54px;
-	z-index: 10;
-	background: rgba(255, 255, 255, 0.9);
-}
