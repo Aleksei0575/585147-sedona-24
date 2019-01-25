@@ -565,6 +565,38 @@ ul {
 	margin-bottom: 55px;
 }
 
+
+/*Стили для внутренней страницы*/
+.filter-block .filter-block {
+	/*position: relative;
+	background-color: #6e95bb;
+	background-image: url("../img/filter-background.jpg");
+	background-repeat: no-repeat;*/
+	/*background-position: 0 -83px;*/
+
+	margin: 0;
+	padding: 0;
+	width: 1200px;
+	height: 217px;
+	background-color: #6e95bb;
+	background-image: url("../img/filter-background.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 -305px;
+
+
+  /*background:#6b9bc5 url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 217px;
+  background-position: 0 -305px;*/
+}
+
+.footer {
+	margin-top: 50px;
+}
+
+
+/*===============================*/
 .main-footer {
 	display: flex;
 	justify-content: space-between;
