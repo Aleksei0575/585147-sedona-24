@@ -567,13 +567,12 @@ ul {
 
 
 /*Стили для внутренней страницы*/
-.filter-block .filter-block {
-	/*position: relative;
-	background-color: #6e95bb;
-	background-image: url("../img/filter-background.jpg");
-	background-repeat: no-repeat;*/
-	/*background-position: 0 -83px;*/
+.inner-page .main-header {
+	margin-bottom: 0px;
+}
 
+.background {
+	position: relative;
 	margin: 0;
 	padding: 0;
 	width: 1200px;
@@ -582,18 +581,217 @@ ul {
 	background-image: url("../img/filter-background.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 -305px;
-
-
-  /*background:#6b9bc5 url("../img/filter-background.jpg");
-  background-repeat: no-repeat;
-  width: 1200px;
-  height: 217px;
-  background-position: 0 -305px;*/
 }
 
-.footer {
+.filter-block {
+	color: #ffffff;
+}
+
+.filter-block legend {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.filter-item {
+	margin: 0;
+	padding: 0;
+
+	border: none;
+}
+
+.filter {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filter fieldset:nth-child(1) {
+	width: 240px;
+	margin-top: 27px;
+	padding-left: 71px;
+}
+
+.filter fieldset:nth-child(2) {
+	width: 290px;
+	margin-top: 27px;
+	padding-left: 15px;
+	margin-right: 195px;
+}
+
+.filter fieldset:nth-child(3) {
+	width: 328px;
+	margin-top: 27px;
+	padding-right: 60px;
+	margin-left: 0 auto;
+}
+
+.infrastructure,
+.type-housing {
+	margin-bottom: 24px;
+}
+
+.infrastructure-item label,
+.type-housing-item label {
+	position: relative;
+	padding-left: 41px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.infrastructure-item,
+.type-housing-item {
+	padding-bottom: 25px;
+}
+
+/*.infrastructure-item,
+.type-housing-item {
+	padding-left: 41px;
+}*/
+
+.filter-input-checkbox + label::before {
+	content: "";
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	top: -1px;
+	left: -0px;
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:checked + label::before {
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	top: -1px;
+	left: 0px;
+	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
+}
+
+/*.filter-input-checkbox:checked:disabled + label {
+	color: rgba(255, 255, 255, 1);
+	opacity: 0.8;
+}*/
+
+.price legend {
+	margin-bottom: 12px;
+}
+
+.filter-item input[type="text"] {
+	background-color: transparent;
+	border: 2px solid #ffffff;
+}
+
+.filter-item input {
+	padding-top: 5px;
+	padding-bottom: 4px;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	width: 156px;
+	color: #ffffff;
+}
+
+.price-controls {
+	display: flex;
+}
+
+.price-controls input[name="min-price"] {
+	border-right: none;
+}
+
+.price-controls input[name="max-price"] {
+	border-left: none;
+}
+
+.price-controls span {
+	padding-top: 4px;
+	border-top: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+}
+
+.range-controls {
+	position: relative;
+
+	/*height: 41px;*/
+	padding-top: 21px;
+	margin-bottom: 32px;
+	padding-right: 10px;
+	padding-left: 20px;
+	background-color: transparent;
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+
+	background: #ffffff;
+}
+
+.range-controls .scale {
+	height: 2px;
+
+	background: #d7dcde;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 12px;
+	left: 0;
+
+	width: 4px;
+	height: 4px;
+	padding: 0;
+
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	background-color: #ababab;
+	-webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+		box-shadow: 0 2px 1px 0 #cfcfcf;
+	cursor: pointer;
+}
+
+.range-controls .toggle-min {
+	left: 0px;
+}
+
+.range-controls .toggle-max {
+	left: 252px;
+}
+
+.filter-button {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #ffffff;
+	/*text-align: center;*/
+	background-color: transparent;
+	border: 2px solid #ffffff;
+}
+
+.price .button {
+	display: inline-block;
+	
+	margin-left: 85px;
+	padding-top: 6px;
+	padding-right: 33px;
+	padding-bottom: 6px;
+	padding-left: 35px;
+	min-width: 65px;
+	
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*.footer {
 	margin-top: 50px;
-}
+}*/
 
 
 /*===============================*/
