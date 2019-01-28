@@ -32,6 +32,8 @@
 		<main >
 			<section class="filter-block">
 				<div class="background">
+	<!-- Почему-то фоновое изображение не хотело вставлятся без этого div-->
+	<!-- Форма с фильтром -->
 					<h2 class="visually-hidden">Фильтр выбора отелей</h2>
 					<form class="filter" method="GET" action="https://echo.htmlacademy.ru" aria-label="Форма с фильтром">
 						<fieldset class="filter-item">
@@ -55,15 +57,17 @@
 							<legend class="type-housing">Тип жилья:</legend>
 							<ul>
 								<li class="type-housing-item">
-									<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="hotel" value="hotel" id="hotel" checked disabled>
+									<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="hotel" value="hotel" id="hotel" checked>
+		<!-- Временно снял disabled чтобы было видно, что кнопки работают -->
 									<label class="checkbox-on" for="hotel">Гостиница</label>
 								</li>
 								<li class="type-housing-item">
-									<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="motel" value="motel" id="motel" checked disabled>
+									<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="motel" value="motel" id="motel" checked>
 									<label class="checkbox-on" for="motel">Мотель</label>
 								</li>
 								<li class="type-housing-item">
 									<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="apartments" value="apartments" id="apartments" checked disabled>
+	<!-- Здесь disabled оставил, стили заблокированной кнопке на прописаны -->
 									<label class="checkbox-on" for="apartments">Апартаменты</label>
 								</li>
 							</ul>
@@ -94,7 +98,9 @@
 					</form>
 				</div>
 			</section>
-			<section class="sort-block">
+		<!-- Сделал обертку "wrapper" для еще одного выравнивания контента -->
+		<!-- Блок сортировки -->
+			<section class="sort-block wrapper">
 				<b class="found">Найдено: 3</b>
 				<h2 class="block-title">Сортировка:</h2>
 				<ul class="sort-panel">
@@ -117,9 +123,13 @@
 					</li>
 				</ul>
 			</section>
+			<!-- Эту линию сделал с помощью CSS -->
+			<div class="layer"></div>
+			<!-- Карточка выбора отелей -->
 			<section class="hotel">
 				<h2 class="visually-hidden">Список гостиниц</h2>
 				<ul class="hotel-list">
+					<!-- Карточка 1 -->
 					<li class="hotel-items">
 						<div class="hotel-img">
 							<a class="hotel-link" href="#">
@@ -127,43 +137,104 @@
 							</a>
 						</div>
 						<div class="hotel-card">
-							<h3 class="card-title">Amara Resort &amp; Spa</h3>
-							<span class="category">Гостиница</span>
-							<span class="cost">От 4000 Р.</span>
+							<h3 class="card-title">
+								<a href="">Amara Resort &amp; Spa</a>
+							</h3>
+							<div class="description-hotel-wrapper">
+								<div class="info">
+									<div class="description-hotel">
+										<span class="category">Гостиница</span>
+										<a class="hotel-link-btn" href="#">Подробнее</a>
+									</div>
+									<div class="booking-hotel">
+										<span class="cost">От 4000 Р.</span>
+										<a class="book-btn" href="#">Забронировать</a>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="detailed">
-							<a class="hotel-link-btn" href="#">Подробнее</a>
-							<a class="book-btn" href="#">Забронировать</a>
+						<div class="hotel-rating">
+							<div class="hotel-stars stars-four"></div>
+							<p class="rating-score">Рейтинг: 8,5</p>
 						</div>
-						<div class="rating">
-							<img src="img/star.svg" width="18" height="17" alt="star">
-							<img src="img/star.svg" width="18" height="17" alt="star">
-							<img src="img/star.svg" width="18" height="17" alt="star">
-							<img src="img/star.svg" width="18" height="17" alt="star">
-						</div>
-						<p class="rating-score">Рейтинг: 8,5</p>
 					</li>
-					
+					<!-- Карточка 2 -->
+					<li class="hotel-items">
+						<div class="hotel-img">
+							<a class="hotel-link" href="#">
+								<img src="img/hotel-2.jpg" width="135" height="90" alt="Изображение отеля Desert Quail Inn">
+							</a>
+						</div>
+						<div class="hotel-card">
+							<h3 class="card-title">
+								<a href="">Desert Quail Inn</a>
+							</h3>
+							<div class="description-hotel-wrapper">
+								<div class="info">
+									<div class="description-hotel">
+										<span class="category">Мотель</span>
+										<a class="hotel-link-btn" href="#">Подробнее</a>
+									</div>
+									<div class="booking-hotel">
+										<span class="cost">От 3000 Р.</span>
+										<a class="book-btn" href="#">Забронировать</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotel-rating">
+							<div class="hotel-stars stars-three"></div>
+							<p class="rating-score">Рейтинг: 8,9</p>
+						</div>
+					</li>
+					<!-- Карточка 3 -->
+					<li class="hotel-items">
+						<div class="hotel-img">
+							<a class="hotel-link" href="#">
+								<img src="img/hotel-3.jpg" width="135" height="90" alt="Изображение отеля Villas at Poco Diablo">
+							</a>
+						</div>
+						<div class="hotel-card">
+							<h3 class="card-title">
+								<a href="">Villas at Poco Diablo</a>
+							</h3>
+							<div class="description-hotel-wrapper">
+								<div class="info">
+									<div class="description-hotel">
+										<span class="category">Апартаменты</span>
+										<a class="hotel-link-btn" href="#">Подробнее</a>
+									</div>
+									<div class="booking-hotel">
+										<span class="cost">От 2000 Р.</span>
+										<a class="book-btn" href="#">Забронировать</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotel-rating">
+							<div class="hotel-stars stars-two"></div>
+							<p class="rating-score">Рейтинг: 9,2</p>
+						</div>
+					</li>
+
 				</ul>
 			</section>
 
-
-
 		</main>
 		<!-- Футер сайта -->
-		<!-- <footer class="main-footer">
+		<footer class="main-footer">
 			<div class="hashtag">
 				<p>#visitSEDONA</p>
-			</div> -->
+			</div>
 			<!--Блок соцсети-->
-			<!-- <div class="footer-social"> 
+			<div class="footer-social"> 
 				<a href="#" class="social-btn social-btn-tw" aria-label="Ссылка на страницу Твиттер"><span>Твиттер</span></a>
 				<a href="#" class="social-btn social-btn-vk" aria-label="Ссылка на страницу Вконтакте"><span>Вконтакте</span></a>
 				<a href="#" class="social-btn social-btn-tube" aria-label="Ссылка на страницу Ютуб"><span>Ютуб</span></a>
-			</div> -->
+			</div>
 
 			 <!--Блок разработчика-->
-			<!-- <div class="footer-copyright">
+			<div class="footer-copyright">
 				<span class="developer">Website by</span>
 				<a class="btn-developer" href="https://htmlacademy.ru/intensive/htmlcss">
 					<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="115" height="41" viewBox="0 0 108.08 36.85">
@@ -173,8 +244,7 @@
 				</a>
 			</div>
 		</footer>
-		</div> -->
-
+		</div>
 
 	</body>
 </html>
