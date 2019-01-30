@@ -72,9 +72,9 @@ ul {
 	flex-wrap: wrap;
 }
 
-.main-navigation {
+/*.main-navigation {
 	background-color: #ffffff;
-}
+}*/
 
 .logo {
 	position: relative;
@@ -92,8 +92,6 @@ ul {
 }
 
 .navigation-item {
-	display: inline-block;
-
 	padding-top: 15px;
 	padding-right: 55px;
 	padding-bottom: 15px;
@@ -184,6 +182,13 @@ ul {
 	flex-wrap: wrap;
 }
 
+.description-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
 .description {
 	display: flex;
 	justify-content: center;
@@ -209,6 +214,8 @@ ul {
 }
 
 .description h3 {
+	margin: 0;
+	margin-bottom: 24px;
 	font-size: 21px;
 }
 
@@ -234,20 +241,19 @@ ul {
 	height: 256px;
 }
 
-.detailed-first .hotels,
-.detailed-second .food,
-.detailed-third .souvenirs {
+.detailed-first,
+.detailed-second,
+.detailed-third {
 	position: relative;
 	padding-top: 161px;
-	margin-bottom: 24px;
 }
 
-.detailed-first .hotels::before {
+.detailed-first::before {
 	content: "";
 
 	position: absolute;
 	top: 60px;
-	left: -4px;
+	left: 162px;
 
 	width: 75px;
 	height: 72px;
@@ -257,12 +263,12 @@ ul {
 	background-position: 0 0;
 }
 
-.detailed-second .food::before {
+.detailed-second::before {
 	content: "";
 
 	position: absolute;
-	top: 60px;
-	left: -18px;
+	top: 61px;
+	left: 163px;
 
 	width: 74px;
 	height: 70px;
@@ -272,12 +278,12 @@ ul {
 	background-position: 0 0;
 }
 
-.detailed-third .souvenirs::before {
+.detailed-third::before {
 	content: "";
 
 	position: absolute;
 	top: 56px;
-	left: 19px;
+	left: 168px;
 
 	width: 64px;
 	height: 74px;
@@ -290,7 +296,8 @@ ul {
 .detailed-first .advantage-description-hotels,
 .detailed-second .advantage-description-food,
 .detailed-third .advantage-description-souvenirs {
-	margin-bottom: 82px;
+	margin: 0;
+	padding-bottom: 82px;
 }
 
 .description .bridge {
@@ -324,7 +331,8 @@ ul {
 .third-advantage .advantage-description,
 .fourth-advantage .advantage-description,
 .fifth-advantage .advantage-description {
-	margin-bottom: 58px;
+	margin: 0;
+	padding-bottom: 58px;
 }
 
 .advantage-block {
@@ -910,7 +918,7 @@ ul {
 	color: #333333;
 }
 
-.info {
+.info-card {
 	display: flex;
 	flex-direction: row;
 }
@@ -992,10 +1000,18 @@ ul {
 }
 
 .hotel-stars {
-	width: 110px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.hotel-stars .star {
+	content: "";
+	width: 18px;
 	height: 17px;
+
+	padding-right: 24px;
 	background-image: url("../img/star.svg");
-	background-repeat: space;
+	background-repeat: no-repeat;
 }
 
 .stars-four {
@@ -1037,8 +1053,6 @@ ul {
 	background-color: #f2f2f2;
 }
 
-
-
 /*===============================*/
 .main-footer {
 	display: flex;
@@ -1049,8 +1063,6 @@ ul {
 	        flex-wrap: wrap;
 	position: relative;
 
-	padding: 0;
-	margin-bottom: 0px;
 	margin-top: -127px;
 	z-index: 10;
 	background: rgba(255, 255, 255, 0.9);

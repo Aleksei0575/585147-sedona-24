@@ -37,10 +37,11 @@
 				<h1 class="promo-block-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 				<p class="advantage">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 			</div>
+				<!-- Преимущества -->
 			<section class="advantage-block">
 				<h2 class="visually-hidden">Преимущества</h2>
 				<!-- Список преимуществ -->
-				<!-- Первое преимущество -->
+					<!-- Первое преимущество -->
 				<ul class="advantage-list">
 					<li class="description first-advantage">
 						<h3 class="advantage-title city">Настоящий городок</h3>
@@ -50,7 +51,9 @@
 					<li class="first-advantage-img">
 						<img src="img/advantage-image-1.jpg" width="800" height="256" alt="Изображение мотеля">
 					</li>
-					<!-- Детали первого преимущества -->
+				</ul>
+					<!-- Описание первого преимущества -->
+				<ul class="description-list">
 					<li class="description detailed-first">
 						<h3 class="advantage-title hotels">Жильё</h3>
 						<p class="advantage-description-hotels">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -63,7 +66,9 @@
 						<h3 class="advantage-title souvenirs">Сувениры</h3>
 						<p class="advantage-description-souvenirs">Не только китайского, но и местного производства!</p>
 					</li>
+				</ul>
 					<!-- Второе преимущество -->
+				<ul class="advantage-list">
 					<li class="second-advantage-img">
 						<img src="img/advantage-image-2.jpg" width="800" height="256" alt="Изображение моста">
 					</li>
@@ -72,7 +77,9 @@
 						<span class="number">&#8212; &#8470;2 &#8212;</span>
 						<p class="advantage-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</li>
+				</ul>
 					<!-- Третье преимущество -->
+				<ul class="description-list">
 					<li class="description third-advantage">
 						<h3 class="advantage-title">Небольшая площадь</h3>
 						<span class="number">&#8212; &#8470;3 &#8212;</span>
@@ -91,16 +98,18 @@
 						<p class="advantage-description">Большинство едет в гранд каньон и толпится там</p>
 					</li>
 				</ul>
-				<!-- Конец блока с преимуществами -->
 			</section>
+
 			<!-- Блок заказа и поиска отелей -->
 			<section class="search-hotels">
 				<h2 class="search-hotels-title">Заинтересовались?</h2>
 				<p class="travel-dates">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				<a href="search-form-link" class="btn-search-form button">ПОИСК ГОСТИНИЦЫ В седоне</a>
+				<a href="search-form.html" class="btn-search-form button">ПОИСК ГОСТИНИЦЫ В седоне</a>
+				<!-- Модальное окно скрытое при загрузке страницы -->
 				<div class="modal modal-login visually-hidden">
 					<h2 class="visually-hidden">Форма поиска отеля</h2>
-					<!-- Модальное окно - форма для поиска подходящего отеля -->
+					Модальное окно - форма для поиска подходящего отеля
+					<!-- Форма поиска -->
 					<form class="user-search-form" action="https://echo.htmlacademy.ru" method="POST">
 						<div class="search-form">
 							<div class="entry-form arrival-input">
@@ -156,26 +165,30 @@
 							</button>
 						</div>
 					</form>
-					
+					<!-- форма завершена -->
 				</div>
+				<!-- Модальное окно конец -->
 			</section>
+			<!-- Блок с картой -->
 			<section class="map">
 				<h2 class="visually-hidden">Карта с расположением города Седона</h2>
 				<img src="img/map.jpg" width="1200" height="594" alt="Фрагмет карты с расположением города Седона">
 			</section>
 		</main>
-		<!-- Футер сайта -->
+		 <!-- Футер сайта -->
 		<footer class="main-footer">
+			<!-- Блок с хештегом -->
 			<div class="hashtag">
 				<p>#visitSEDONA</p>
 			</div>
-			<div class="footer-social"> <!--Блок соцсети-->
+			<!-- Блок с социальными кнопками -->
+			<div class="footer-social"> <!--Блок соцсети -->
 				<a href="#" class="social-btn social-btn-tw" aria-label="Ссылка на страницу Твиттер"><span>Твиттер</span></a>
 				<a href="#" class="social-btn social-btn-vk" aria-label="Ссылка на страницу Вконтакте"><span>Вконтакте</span></a>
 				<a href="#" class="social-btn social-btn-tube" aria-label="Ссылка на страницу Ютуб"><span>Ютуб</span></a>
 			</div>
-
-			<div class="footer-copyright"> <!--Блок разработчика-->
+			<!--Блок разработчика -->
+			<div class="footer-copyright">
 				<span class="developer">Website by</span>
 				<a class="btn-developer" href="https://htmlacademy.ru/intensive/htmlcss">
 					<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="115" height="41" viewBox="0 0 108.08 36.85">
@@ -186,7 +199,5 @@
 			</div>
 		</footer>
 		</div>
-
-
 	</body>
 </html>
