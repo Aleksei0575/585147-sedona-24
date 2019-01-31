@@ -1106,8 +1106,8 @@ ul {
 	margin-right: 3px;
 }
 
-.social-btn-vk:hover {
-	background-color: #ee3643;
+.social-btn-tw:hover {
+	background-color: #669ec0;
 }
 
 .social-btn-tw::before {
@@ -1132,8 +1132,8 @@ ul {
 	margin-right: 2px;
 }
 
-.social-btn-fb:hover {
-	background-color: #ee3643;
+.social-btn-vk:hover {
+	background-color: #669ec0;
 }
 
 .social-btn-vk::before {
@@ -1157,8 +1157,8 @@ ul {
 	background-color: #81b3d2;
 }
 
-.social-btn-inst:hover {
-	background-color: #ee3643;
+.social-btn-tube:hover {
+	background-color: #669ec0;
 }
 
 .social-btn-tube::before {
