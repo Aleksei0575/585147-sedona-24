@@ -410,6 +410,15 @@ ul {
 	background-color: #766357;
 }
 
+.search-hotels .button:hover {
+	background-color: #604e43;
+}
+
+.search-hotels .button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
+
 /*Стилизация формы*/
 .user-search-form {
 	width: 568px;
@@ -1122,6 +1131,14 @@ ul {
 	background-color: #669ec0;
 }
 
+.social-btn-tw:active {
+	background-color: #5496bd;
+}
+
+.social-btn-tw:active::before {
+	opacity: 0.3;
+}
+
 .social-btn-tw::before {
 	content: "";
 	position: absolute;
@@ -1148,6 +1165,14 @@ ul {
 	background-color: #669ec0;
 }
 
+.social-btn-vk:active {
+	background-color: #5496bd;
+}
+
+.social-btn-vk:active::before {
+	opacity: 0.3;
+}
+
 .social-btn-vk::before {
 	content: "";
 	position: absolute;
@@ -1171,6 +1196,14 @@ ul {
 
 .social-btn-tube:hover {
 	background-color: #669ec0;
+}
+
+.social-btn-tube:active {
+	background-color: #5496bd;
+}
+
+.social-btn-tube:active::before {
+	opacity: 0.3;
 }
 
 .social-btn-tube::before {
