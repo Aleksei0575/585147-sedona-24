@@ -1227,6 +1227,14 @@ ul {
 	margin-right: 100px;
 }
 
+.footer-copyright:hover path {
+	fill: #81b3d2;
+}
+
+.footer-copyright:active path {
+	fill: #bdbbbc;
+}
+
 .developer {
 	line-height: 26px;
 	font-weight: normal;
@@ -1235,6 +1243,10 @@ ul {
 	/*text-transform: uppercase;*/
 	/*color: #000000;*/
 }
+
+/*.login-link:hover path {
+	fill: #293449;
+}*/
 
 /* Блок обратной связи */
 .footer-contacts-mail {
