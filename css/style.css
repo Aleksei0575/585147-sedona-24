@@ -80,6 +80,18 @@ ul {
 	position: relative;
 }
 
+.navigation-item a:hover {
+	color: #81b3d2;
+}
+
+.navigation-item a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation-item a:focus {
+	color: #766357;
+}
+
 .logo img {
 	position: absolute;
 	z-index: 2;
