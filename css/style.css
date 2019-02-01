@@ -447,6 +447,23 @@ ul {
 	padding-right: 18px;
 }
 
+.calendar {
+	outline: none;
+}
+
+.calendar path {
+	fill: #cacaca;
+}
+
+.calendar:hover path,
+.calendar:focus path {
+	fill: #000000;
+}
+
+.calendar:active path {
+	fill: #81b3d2;
+}
+
 .entry-form-departure {
 	padding-right: 18px;
 }
@@ -469,6 +486,18 @@ ul {
 	text-transform: uppercase;
 	color: #000000;
 	background-color: #f2f2f2;
+}
+
+.arrival-date:hover,
+.departure-date:hover {
+	background-color: #ebebeb;
+}
+
+.arrival-date:focus,
+.departure-date:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+	outline: none;
 }
 
 .arrival-date {
@@ -517,12 +546,23 @@ ul {
 	background-color: #f2f2f2;
 }
 
+.quantity:hover {
+	background-color: #ebebeb;
+}
+
+.quantity:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+	outline: none;
+}
+
 .button-minus-adults,
 .button-plus-adults,
 .button-minus-child,
 .button-plus-child {
 	background-color: transparent;
 	border: none;
+	outline: none;
 }
 
 .button-minus-adults {
@@ -542,8 +582,27 @@ ul {
 	margin-right: 30px;
 }
 
+.button-minus-adults path,
+.button-plus-adults path,
+.button-minus-child path,
+.button-plus-child path {
+	fill: #cacaca;
+}
+
 .choice-adults {
 	padding-right: 41px;
+}
+
+.button-minus-adults:hover path,
+.button-minus-adults:focus path,
+.button-plus-adults:hover path,
+.button-plus-adults:focus path {
+	fill: #000000;
+}
+
+.button-minus-adults:active path,
+.button-plus-adults:active path {
+	fill: #81b3d2;
 }
 
 .choice-child {
@@ -564,6 +623,18 @@ ul {
 	height: 38px;
 	
 	background-color: #f2f2f2;
+}
+
+.button-minus-child:hover path,
+.button-minus-child:focus path,
+.button-plus-child:hover path,
+.button-plus-child:focus path {
+	fill: #000000;
+}
+
+.button-minus-child:active path,
+.button-plus-child:active path {
+	fill: #81b3d2;
 }
 
 .booking-people .button-plus-adults {
@@ -594,6 +665,15 @@ ul {
 	
 	background-color: #81b3d2;
 	border: none;
+}
+
+.button-submit:hover {
+	background-color: #669ec0;
+}
+
+.button-submit:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
 }
 
 .button-form button{
