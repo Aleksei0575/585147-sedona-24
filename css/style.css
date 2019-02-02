@@ -392,7 +392,8 @@ ul {
 }
 
 .search-hotels .button {
-	display: inline-block;
+	position: relative;
+	/*display: inline-block;*/
 	
 	padding-top: 30px;
 	padding-right: 140px;
@@ -678,6 +679,13 @@ ul {
 
 .button-form button{
 	margin-bottom: 55px;
+}
+
+.map iframe {
+	position: absolute;
+	z-index: 2;
+
+	border: none;
 }
 
 /*Стили для внутренней страницы*/
@@ -1458,12 +1466,58 @@ ul {
 	padding-top: 4px;*/
 }
 
-
-
-
-
-
-/*.social-btn span {
+/*============================*/
+/*Модальное окно*/
+/*Форма поиска отелей*/
+.modal {
 	display: none;
-}*/
+}
+
+.modal {
+	position: relative;
+
+	color: #000000;
+	background-color: #ffffff;
+
+	-webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-search {
+	position: absolute;
+	width: 568px;
+	/*margin-left: -193px;*/
+	z-index: 1000;
+
+	top: 241px;
+	/*left: 50%;*/
+}
+
+.modal-show {
+	display: block;
+	-webkit-animation-name: bounce;
+			animation-name: bounce;
+	-webkit-animation-duration: 0.6s;
+			animation-duration: 0.6s
+}
+
+@keyframes bounce {
+	0% {
+	-webkit-transform: translateY(400px);
+			transform: translateY(400px);
+	}
+	70% {
+	-webkit-transform: translateY(50px);
+			transform: translateY(50px);
+	}
+	90% {
+	-webkit-transform: translateY(10px);
+			transform: translateY(10px);
+	}
+	100% {
+	-webkit-transform: translateY(0px);
+			transform: translateY(0px);
+	}
+}
 
