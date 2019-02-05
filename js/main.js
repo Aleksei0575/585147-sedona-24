@@ -12,8 +12,8 @@ var storageDeparture = "";
 
 
 try {
-    var storageArrival = localStorage.getItem("arrivalDate");
-    var storageDeparture = localStorage.getItem("departureDate");
+    var storageArrival = localStorage.getItem("arrival");
+    var storageDeparture = localStorage.getItem("departure");
 } catch (err) {
     isStorageSupport = false;
 };
@@ -27,6 +27,20 @@ link.addEventListener("click", function (evt) {
         numberPersons.focus();
     } else {
         arrival.focus();
+    }
+});
+
+form.addEventListener("submit", function (evt) {
+    if (!arrival.value || !departure.value) {
+        evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
+    } else {
+        if (isStorageSupport) {
+            localStorage.setItem("arrival", arrival.value);
+            localStorage.setItem("departure", departure.value);
+        }
     }
 });
 
