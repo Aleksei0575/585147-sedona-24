@@ -45,11 +45,11 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 }
 
-ul {
+/*ul {
 	list-style: none; 
 	margin: 0;
 	padding: 0;
-}
+}*/
 
 .container {
 	padding: 0;
@@ -70,6 +70,9 @@ ul {
 	display: flex;
 	/*justify-content: space-around;*/
 	flex-wrap: wrap;
+	list-style: none; 
+	margin: 0;
+	padding: 0;
 }
 
 /*.main-navigation {
@@ -192,6 +195,10 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	
+	list-style: none; 
+	margin: 0;
+	padding: 0;
 }
 
 .description-list {
@@ -199,6 +206,10 @@ ul {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
+	
+	list-style: none; 
+	margin: 0;
+	padding: 0;
 }
 
 .description {
@@ -724,6 +735,12 @@ ul {
 	border: none;
 }
 
+.filter-item ul {
+	list-style: none; 
+	margin: 0;
+	padding: 0;
+}
+
 .filter {
 	display: flex;
 	flex-wrap: wrap;
@@ -967,6 +984,10 @@ ul {
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	
+	list-style: none; 
+	margin: 0;
+	padding: 0;
 }
 
 .found {
@@ -1235,6 +1256,14 @@ ul {
 	padding-right: 24px;
 	background-image: url("../img/star.svg");
 	background-repeat: no-repeat;
+}
+
+.stars-four,
+.stars-three,
+.stars-two {
+	list-style: none; 
+	margin: 0;
+	padding: 0;
 }
 
 .stars-four {
