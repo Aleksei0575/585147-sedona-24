@@ -95,6 +95,10 @@ input[type="radio"].visually-hidden {
 	color: #766357;
 }
 
+.active-page {
+	color: #766357;
+}
+
 .logo img {
 	position: absolute;
 	z-index: 2;
