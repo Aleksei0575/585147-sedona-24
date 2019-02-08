@@ -83,6 +83,10 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
+.logo img:focus {
+	outline: 2px solid #81b3d2;
+}
+
 .navigation-item a:hover {
 	color: #81b3d2;
 }
@@ -234,6 +238,14 @@ input[type="radio"].visually-hidden {
 	background-color: #81b3d2;
 }
 
+.first-advantage:focus,
+.second-advantage:focus,
+.third-advantage:focus,
+.fourth-advantage:focus,
+.fifth-advantage:focus {
+	outline: 1px solid #81b3d2;
+}
+
 .third-advantage,
 .fourth-advantage,
 .fifth-advantage {
@@ -273,6 +285,12 @@ input[type="radio"].visually-hidden {
 .detailed-third {
 	position: relative;
 	padding-top: 161px;
+}
+
+.detailed-first:focus,
+.detailed-second:focus,
+.detailed-third:focus {
+	outline: 1px solid #81b3d2;
 }
 
 .detailed-first::before {
@@ -848,6 +866,10 @@ input[type="radio"].visually-hidden {
 	opacity: 0.3;
 }
 
+.filter-input:focus + label::before {
+	outline: 1px solid #4cb7d6;
+}
+
 .price legend {
 	margin-bottom: 12px;
 }
@@ -930,7 +952,8 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
-.range-controls .toggle:hover {
+.range-controls .toggle:hover,
+.range-controls .toggle:focus {
 	transform: scale(1.2);
 	background: #1c4f80;
 }
