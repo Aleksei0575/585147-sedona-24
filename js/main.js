@@ -30,6 +30,10 @@ link.addEventListener("click", function (evt) {
     }
 });
 
+window.onload = function() {
+    document.querySelector('a[href="search-form.html"]').click();
+}
+
 form.addEventListener("submit", function (evt) {
     if (!arrival.value || !departure.value) {
         evt.preventDefault();
