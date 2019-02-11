@@ -20,7 +20,7 @@ try {
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.add("modal-show");
+    popup.classList.toggle("modal-show");
     if (storageArrival || storageDeparture) {
         arrival.value = storageArrival;
         departure.value = storageDeparture;
