@@ -1391,7 +1391,8 @@ input[type="radio"].visually-hidden {
 	margin-right: 3px;
 }
 
-.social-btn-tw:hover {
+.social-btn-tw:hover,
+.social-btn-tw:focus {
 	background-color: #669ec0;
 }
 
@@ -1425,7 +1426,8 @@ input[type="radio"].visually-hidden {
 	margin-right: 2px;
 }
 
-.social-btn-vk:hover {
+.social-btn-vk:hover,
+.social-btn-vk:focus {
 	background-color: #669ec0;
 }
 
@@ -1458,7 +1460,8 @@ input[type="radio"].visually-hidden {
 	background-color: #81b3d2;
 }
 
-.social-btn-tube:hover {
+.social-btn-tube:hover,
+.social-btn-tube:focus {
 	background-color: #669ec0;
 }
 
@@ -1492,11 +1495,12 @@ input[type="radio"].visually-hidden {
 	padding-top: 5px;
 }
 
-.footer-copyright:hover path {
+.btn-developer:hover path,
+.btn-developer:focus path {
 	fill: #81b3d2;
 }
 
-.footer-copyright:active path {
+.btn-developer:active path {
 	fill: #bdbbbc;
 }
 
@@ -1569,8 +1573,8 @@ input[type="radio"].visually-hidden {
 	0% {
 	-webkit-transform: scale(0);
 			transform: scale(0);
-	-webkit-transform: translateX(-20px);
-			transform: translateX(-20px);
+	/*-webkit-transform: translateX(-20px);
+			transform: translateX(-20px);*/
 	}
 	70% {
 	-webkit-transform: scale(0.25);
