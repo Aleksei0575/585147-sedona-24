@@ -472,6 +472,10 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 }
 
+.entry-form input {
+	font: inherit;
+}
+
 .arrival-input {
 	margin-top: 55px;
 	margin-bottom: 29px;
@@ -675,18 +679,22 @@ input[type="radio"].visually-hidden {
 	margin-right: 53px;
 }
 
+.button-form {
+	width: 458px;
+}
+
 .button-submit {
 	margin-left: 55px;
 }
-
+/*Сделал кнопку более универсальной*/
 .button-submit {
 	display: inline-block;
 	
 	padding-top: 16px;
-	padding-right: 196px;
+	/*padding-right: 96px;*/
 	padding-bottom: 16px;
-	padding-left: 196px;
-	min-width: 65px;
+	/*padding-left: 96px;*/
+	min-width: 100%;
 	
 	text-align: center;
 	vertical-align: middle;
