@@ -219,7 +219,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	        justify-content: flex-start;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	
@@ -271,6 +271,7 @@ input[type="radio"].visually-hidden {
 .second-advantage {
 	color: #ffffff;
 	background-color: #81b3d2;
+	min-height: 256px;
 }
 
 .first-advantage:focus,
@@ -468,7 +469,7 @@ input[type="radio"].visually-hidden {
 .search-hotels .travel-dates {
 	width: 440px;
 
-	margin-bottom: 46px;
+	margin-bottom: 45px;
 	font-weight: normal;
 	line-height: 24px;
 	text-align: center;
@@ -494,7 +495,7 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 	color: #ffffff;
 	background-color: #766357;
-	border: 1px solid;
+	/*border: 1px solid;*/
 }
 
 .search-hotels .button:hover {
@@ -581,7 +582,7 @@ input[type="radio"].visually-hidden {
 }
 
 .entry-form-arrival {
-	padding-right: 18px;
+	padding-right: 14px;
 }
 
 .calendar {
@@ -602,7 +603,7 @@ input[type="radio"].visually-hidden {
 }
 
 .entry-form-departure {
-	padding-right: 18px;
+	padding-right: 11px;
 }
 
 .quantity {
@@ -639,11 +640,11 @@ input[type="radio"].visually-hidden {
 }
 
 .arrival-date {
-	padding-left: 15px;
+	padding-left: 17px;
 }
 
 .departure-date {
-	padding-left: 13px;
+	padding-left: 15px;
 }
 
 .calendar {
@@ -662,7 +663,7 @@ input[type="radio"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-bottom: 54px;
+	margin-bottom: 53px;
 }
 
 .booking-people label {
@@ -1758,7 +1759,7 @@ input[type="radio"].visually-hidden {
 	/*margin-left: -193px;*/
 	z-index: 1000;
 
-	top: 242px;
+	top: 240px;
 	left: 316px;
 }
 
