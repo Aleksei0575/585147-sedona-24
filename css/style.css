@@ -11,12 +11,11 @@ body {
 
 	background-color: #f0f0f0;
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 a {
 	text-decoration: none;
-	color: #000000;
 }
 
 img {
@@ -59,7 +58,7 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 	background-color: #ffffff;
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .wrapper {
@@ -74,7 +73,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	/*justify-content: space-around;*/
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+		flex-wrap: wrap;
 	list-style: none; 
 	margin: 0;
 	padding: 0;
@@ -92,6 +91,10 @@ input[type="radio"].visually-hidden {
 	outline: 2px solid #81b3d2;
 }
 
+.navigation-item a {
+	color: #000000;
+}
+
 .navigation-item a:hover {
 	color: #81b3d2;
 }
@@ -104,7 +107,7 @@ input[type="radio"].visually-hidden {
 	color: #766357;
 }
 
-.active-page {
+.navigation-item .active-page {
 	color: #766357;
 }
 
@@ -177,11 +180,11 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+		-ms-flex-direction: column;
+			flex-direction: column;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
 }
 
 .promo-block-title {
@@ -220,10 +223,10 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: flex-start;
+		-ms-flex-pack: justify;
+			justify-content: flex-start;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+		flex-wrap: wrap;
 	
 	list-style: none; 
 	margin: 0;
@@ -235,16 +238,17 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: flex-start;
+		-ms-flex-pack: justify;
+			justify-content: flex-start;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
 	-webkit-align-self: stretch;
 		-ms-align-self: stretch;
-			align-self: stretch;
+			-ms-flex-item-align: stretch;
+		align-self: stretch;
 	
 	list-style: none; 
 	margin: 0;
@@ -265,12 +269,12 @@ input[type="radio"].visually-hidden {
 	-webkit-box-align: center;
 		-ms-flex-align: center;
 			align-items: center;
-	-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
 	-webkit-align-self: stretch;
 		-ms-align-self: stretch;
-			align-self: stretch;
+			-ms-flex-item-align: stretch;
+	align-self: stretch;
 
 	width: 300px;
 	padding: 0 50px;
@@ -460,11 +464,11 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+		-ms-flex-direction: column;
+			flex-direction: column;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
 	
 	position: relative;
 }
@@ -542,11 +546,11 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+		-ms-flex-direction: column;
+			flex-direction: column;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
 }
 
 .entry-form {
@@ -560,11 +564,6 @@ input[type="radio"].visually-hidden {
 	font: inherit;
 }
 /*Правила для стилизации placeholder*/
-.departure-date::-moz-placeholder,
-.arrival-date::-moz-placeholder,
-.quantity::-moz-placeholder {
-	color: #000000;
-}
 
 .departure-date::-webkit-input-placeholder,
 .arrival-date::-webkit-input-placeholder,
@@ -635,7 +634,7 @@ input[type="radio"].visually-hidden {
 .arrival-date,
 .departure-date {
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+			box-sizing: border-box;
 	padding: 0;
 	border: 0;
 	width: 349px;
@@ -695,7 +694,7 @@ input[type="radio"].visually-hidden {
 
 .quantity {
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+			box-sizing: border-box;
 	border: 0;
 	width: 38px;
 	height: 38px;
@@ -904,7 +903,7 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+		flex-wrap: wrap;
 }
 
 .filter fieldset:nth-child(1) {
@@ -1080,8 +1079,6 @@ input[type="radio"].visually-hidden {
 	background-color: transparent;
 }
 
-
-
 .range-controls .bar {
 	width: 80%;
 	height: 2px;
@@ -1115,8 +1112,8 @@ input[type="radio"].visually-hidden {
 .range-controls .toggle:hover,
 .range-controls .toggle:focus {
 	-webkit-transform: scale(1.2);
-	    -ms-transform: scale(1.2);
-	        transform: scale(1.2);
+		-ms-transform: scale(1.2);
+			transform: scale(1.2);
 	background: #1c4f80;
 }
 
@@ -1168,8 +1165,8 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
 }
 
 .sort-panel {
@@ -1177,13 +1174,13 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+		flex-wrap: wrap;
 	
 	list-style: none; 
 	margin: 0;
@@ -1338,6 +1335,7 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 	font-weight: bold;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 .hotel-card {
@@ -1346,11 +1344,11 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+		-ms-flex-direction: column;
+			flex-direction: column;
 	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
+		-ms-flex-positive: 1;
+			flex-grow: 1;
 	padding-left: 21px;
 	padding-right: 31px;
 }
@@ -1369,8 +1367,8 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+		-ms-flex-direction: row;
+			flex-direction: row;
 }
 
 .description-hotel {
@@ -1460,11 +1458,11 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+		-ms-flex-direction: column;
+			flex-direction: column;
 	-webkit-box-align: end;
-	    -ms-flex-align: end;
-	        align-items: flex-end;
+		-ms-flex-align: end;
+			align-items: flex-end;
 	-ms-flex-item-align: start;
 	    align-self: flex-start;
 	padding-top: 4px;
@@ -1476,8 +1474,8 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: start;
-	    -ms-flex-pack: start;
-	        justify-content: flex-start;
+		-ms-flex-pack: start;
+			justify-content: flex-start;
 }
 
 .hotel-stars .star {
@@ -1543,13 +1541,13 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+		flex-wrap: wrap;
 	position: relative;
 
 	margin-top: -127px;
@@ -1707,8 +1705,8 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
 	margin-right: 100px;
 	padding-top: 5px;
 }
@@ -1730,10 +1728,6 @@ input[type="radio"].visually-hidden {
 	/*text-transform: uppercase;*/
 	/*color: #000000;*/
 }
-
-/*.login-link:hover path {
-	fill: #293449;
-}*/
 
 /* Блок обратной связи */
 .footer-contacts-mail {
