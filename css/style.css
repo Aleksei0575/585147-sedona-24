@@ -491,7 +491,7 @@ input[type="radio"].visually-hidden {
 .search-hotels .travel-dates {
 	width: 440px;
 
-	margin-bottom: 45px;
+	margin-bottom: 46px;
 	font-weight: normal;
 	line-height: 24px;
 	text-align: center;
@@ -604,7 +604,7 @@ input[type="radio"].visually-hidden {
 }
 
 .entry-form-arrival {
-	padding-right: 14px;
+	padding-right: 22px;
 }
 
 .calendar {
@@ -625,7 +625,7 @@ input[type="radio"].visually-hidden {
 }
 
 .entry-form-departure {
-	padding-right: 11px;
+	padding-right: 18px;
 }
 
 .quantity {
@@ -662,11 +662,11 @@ input[type="radio"].visually-hidden {
 }
 
 .arrival-date {
-	padding-left: 17px;
+	padding-left: 13px;
 }
 
 .departure-date {
-	padding-left: 15px;
+	padding-left: 13px;
 }
 
 .calendar {
@@ -685,7 +685,7 @@ input[type="radio"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-bottom: 53px;
+	margin-bottom: 54px;
 }
 
 .booking-people label {
@@ -735,6 +735,7 @@ input[type="radio"].visually-hidden {
 	height: 38px;
 
 	background-color: #f2f2f2;
+	cursor: pointer;
 }
 
 .button-plus-adults {
@@ -744,6 +745,7 @@ input[type="radio"].visually-hidden {
 
 	background-color: #f2f2f2;
 	margin-right: 30px;
+	cursor: pointer;
 }
 
 .button-minus-adults path,
@@ -754,7 +756,7 @@ input[type="radio"].visually-hidden {
 }
 
 .choice-adults {
-	padding-right: 41px;
+	padding-right: 40px;
 }
 
 .button-minus-adults:hover path,
@@ -779,6 +781,7 @@ input[type="radio"].visually-hidden {
 	height: 38px;
 	
 	background-color: #f2f2f2;
+	cursor: pointer;
 }
 
 .button-plus-child {
@@ -787,6 +790,7 @@ input[type="radio"].visually-hidden {
 	height: 38px;
 	
 	background-color: #f2f2f2;
+	cursor: pointer;
 }
 
 .button-minus-child:hover path,
@@ -1574,7 +1578,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social:nth-child(2) {
-	padding-bottom: 5px;
+	padding-bottom: 1px;
 }
 
 .footer-copyright span {
@@ -1775,7 +1779,7 @@ input[type="radio"].visually-hidden {
 	/*margin-left: -193px;*/
 	z-index: 1000;
 
-	top: 240px;
+	top: 241px;
 	left: 316px;
 }
 
