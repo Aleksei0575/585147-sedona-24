@@ -210,6 +210,8 @@ input[type="radio"].visually-hidden {
 .advantage-list h3,
 .advantage-list p {
 	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0;
 }
 
@@ -240,6 +242,9 @@ input[type="radio"].visually-hidden {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	-webkit-align-self: stretch;
+		-ms-align-self: stretch;
+			align-self: stretch;
 	
 	list-style: none; 
 	margin: 0;
@@ -251,16 +256,22 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+		-ms-flex-pack: center;
+			justify-content: center;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+		-ms-flex-direction: column;
+			flex-direction: column;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+	-webkit-align-self: stretch;
+		-ms-align-self: stretch;
+			align-self: stretch;
+
 	width: 300px;
 	padding: 0 50px;
 	
@@ -290,6 +301,8 @@ input[type="radio"].visually-hidden {
 
 .description h3 {
 	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 24px;
 	font-size: 21px;
 }
@@ -303,6 +316,8 @@ input[type="radio"].visually-hidden {
 .description .city,
 .description .bridge {
 	width: 125px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: -13px;
 	margin-bottom: 24px;
 }
@@ -346,7 +361,7 @@ input[type="radio"].visually-hidden {
 	width: 75px;
 	height: 72px;
 
-	background-image: url("../img/icon-1.svg");
+	background-image: url("../img/detailed-icon-1.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -361,7 +376,7 @@ input[type="radio"].visually-hidden {
 	width: 74px;
 	height: 70px;
 
-	background-image: url("../img/icon-3.svg");
+	background-image: url("../img/detailed-icon-3.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -376,7 +391,7 @@ input[type="radio"].visually-hidden {
 	width: 64px;
 	height: 74px;
 
-	background-image: url("../img/icon-2.svg");
+	background-image: url("../img/detailed-icon-2.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -385,6 +400,8 @@ input[type="radio"].visually-hidden {
 .detailed-second .advantage-description-food,
 .detailed-third .advantage-description-souvenirs {
 	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: 82px;
 }
 
@@ -404,6 +421,8 @@ input[type="radio"].visually-hidden {
 .fourth-advantage .advantage-title,
 .fifth-advantage .advantage-title {
 	width: 125px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 47px;
 	margin-bottom: 24px;
 }
@@ -424,6 +443,8 @@ input[type="radio"].visually-hidden {
 .fourth-advantage .advantage-description,
 .fifth-advantage .advantage-description {
 	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: 58px;
 }
 
@@ -1609,7 +1630,7 @@ input[type="radio"].visually-hidden {
 	left: 15px;
 	width: 17px;
 	height: 15px;
-	background-image: url("../img/t.svg");
+	background-image: url("../img/twitter.svg");
 	background-repeat: no-repeat;
 }
 
@@ -1739,6 +1760,10 @@ input[type="radio"].visually-hidden {
 /*Модальное окно*/
 /*Форма поиска отелей*/
 .modal {
+	display: block;
+}
+
+.modal-close {
 	display: none;
 }
 
@@ -1848,3 +1873,4 @@ input[type="radio"].visually-hidden {
 	-webkit-transform: translateX(10px);
 			transform: translateX(10px);
 	}
+}

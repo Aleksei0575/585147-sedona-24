@@ -1,4 +1,4 @@
--var link = document.querySelector (".btn-search-form");
+var link = document.querySelector (".btn-search-form");
 var popup = document.querySelector(".modal-search");
 
 var form = popup.querySelector("form");
@@ -20,7 +20,7 @@ try {
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.toggle("modal-show");
+    popup.classList.toggle("modal-close");
     if (storageArrival || storageDeparture) {
         arrival.value = storageArrival;
         departure.value = storageDeparture;
@@ -29,10 +29,6 @@ link.addEventListener("click", function (evt) {
         arrival.focus();
     }
 });
-
-window.onload = function() {
-    document.querySelector('a[href="search-form.html"]').click();
-}
 
 form.addEventListener("submit", function (evt) {
     if (!arrival.value || !departure.value) {
@@ -50,10 +46,28 @@ form.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-        if (popup.classList.contains("modal-show")) {
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-            popup.classList.remove("modal-error");
-        }
+          evt.preventDefault();
+          popup.classList.add("modal-close");
+          // popup.classList.remove("modal-error");
     }
 });
+
+/*==================================================
+===Код для автоматического открытия модального окна
+// window.onload = function(evt) {
+//     popup.classList.add("modal-show");
+// };
+===================================================*/
+
+/*==================================================
+===Код для другой формы которая изначально скыта=====
+// window.addEventListener("keydown", function (evt) {
+//     if (evt.keyCode === 27) {
+//         if (popup.classList.contains("modal-show")) {
+//             evt.preventDefault();
+//             popup.classList.remove("modal-show");
+//             popup.classList.remove("modal-error");
+//         }
+//     }
+// });
+=====================================================*/
