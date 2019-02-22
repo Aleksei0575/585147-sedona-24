@@ -325,6 +325,7 @@ input[type="radio"].visually-hidden {
 .description .number {
 	display: inline-block;
 	margin-bottom: 22px;
+	vertical-align: middle;
 }
 
 .first-advantage-img,
@@ -1579,6 +1580,7 @@ input[type="radio"].visually-hidden {
 .footer-copyright span {
 	display: inline-block;
 	padding-bottom: 8px;
+	vertical-align: middle;
 }
 
 .social-btn {
@@ -1594,6 +1596,7 @@ input[type="radio"].visually-hidden {
 	
 	background-color: #81b3d2;
 	margin-right: 3px;
+	vertical-align: middle;
 }
 
 .social-btn-tw:hover,
@@ -1629,6 +1632,7 @@ input[type="radio"].visually-hidden {
 	
 	background-color: #81b3d2;
 	margin-right: 2px;
+	vertical-align: middle;
 }
 
 .social-btn-vk:hover,
@@ -1663,6 +1667,7 @@ input[type="radio"].visually-hidden {
 	height: 48px;
 	
 	background-color: #81b3d2;
+	vertical-align: middle;
 }
 
 .social-btn-tube:hover,
