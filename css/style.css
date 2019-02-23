@@ -95,16 +95,13 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 }
 
-.navigation-item a:hover {
+.navigation-item a:hover,
+.navigation-item a:focus {
 	color: #81b3d2;
 }
 
 .navigation-item a:active {
 	color: rgba(0, 0, 0, 0.3);
-}
-
-.navigation-item a:focus {
-	color: #766357;
 }
 
 .navigation-item .active-page {

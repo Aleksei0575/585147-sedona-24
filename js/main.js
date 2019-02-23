@@ -21,6 +21,7 @@ try {
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.toggle("modal-close");
+    popup.classList.remove("modal-error");
     if (storageArrival || storageDeparture) {
         arrival.value = storageArrival;
         departure.value = storageDeparture;
@@ -48,7 +49,7 @@ window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
           evt.preventDefault();
           popup.classList.add("modal-close");
-          // popup.classList.remove("modal-error");
+          popup.classList.remove("modal-error");
     }
 });
 
