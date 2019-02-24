@@ -14,13 +14,29 @@
 		<div class="container">
 		<!-- Шапка сайта и главное меню -->
 		<header class="main-header">
-			<nav class="main-navigation" aria-label="Главная навигация сайта">
+			<!-- Кусок кода, если логотип будет элементом меню -->
+			<!-- <nav class="main-navigation" aria-label="Главная навигация сайта">
 				<ul class="main-navigation-items">
 					<li class="navigation-item info" aria-label="Информация о Седоне"><a href="index.html" class="active-page">Информация</a></li>
 					<li class="navigation-item gallery" aria-label="Фотогалерея"><a href="gallery.html">Фото и видео</a></li>
 					<li class="navigation-item logo">
 						<img src="img/logo.svg" width="140" height="71" alt="Логотип сайта" tabindex="0">
 					</li>
+					<li class="navigation-item map" aria-label="Седона на карте"><a href="map.html">Карта штата</a></li>
+					<li class="navigation-item hotels" aria-label="Проживание"><a href="hotels.html">Гостиницы</a></li>
+				</ul>
+			</nav> -->
+			<p class="logo"> <!--tabindex="0" если будет нужен-->
+				<img src="img/logo.svg" width="140" height="72" alt="Логотип сайта">
+			</p>
+
+			<nav class="main-navigation" aria-label="Главная навигация сайта">
+				<ul class="main-navigation-items left-panel">
+					<li class="navigation-item info" aria-label="Информация о Седоне"><a href="index.html" class="active-page">Информация</a></li>
+					<li class="navigation-item gallery" aria-label="Фотогалерея"><a href="gallery.html">Фото и видео</a></li>
+				</ul>
+				
+				<ul class="main-navigation-items right-panel">
 					<li class="navigation-item map" aria-label="Седона на карте"><a href="map.html">Карта штата</a></li>
 					<li class="navigation-item hotels" aria-label="Проживание"><a href="hotels.html">Гостиницы</a></li>
 				</ul>

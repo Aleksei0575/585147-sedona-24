@@ -67,6 +67,25 @@ input[type="radio"].visually-hidden {
 	/*padding: 0 72px;*/
 }
 
+.main-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.main-navigation {
+	position: relative;
+}
+
+.logo {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
 .main-navigation-items {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -82,10 +101,6 @@ input[type="radio"].visually-hidden {
 /*.main-navigation {
 	background-color: #ffffff;
 }*/
-
-.logo {
-	position: relative;
-}
 
 .logo img:focus {
 	outline: 2px solid #81b3d2;
@@ -111,7 +126,7 @@ input[type="radio"].visually-hidden {
 .logo img {
 	position: absolute;
 	z-index: 2;
-	left: 49px;
+	left: 530px;
 	top: 0px;
 }
 
@@ -861,13 +876,17 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 0px;
 }
 
+.inner-page .right-panel {
+	margin-bottom: 1px;
+}
+
 .filter-block {
 	position: relative;
 	margin: 0;
 	margin-bottom: 25px;
 	padding: 0;
 	width: 1200px;
-	height: 218px;
+	/*height: 218px;*/
 	
 	color: #ffffff;
 	background-color: #6e95bb;
@@ -902,11 +921,17 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+	-ms-flex-item-align: stretch;
+	    align-self: stretch;
 }
 
 .filter fieldset:nth-child(1) {
 	width: 240px;
 	margin-top: 27px;
+	margin-bottom: 7px;
 	padding-left: 71px;
 }
 
@@ -1772,29 +1797,91 @@ input[type="radio"].visually-hidden {
 	left: 316px;
 }
 
-/*.modal-show {
-	display: block;
-	-webkit-animation-name: bounce;
-			animation-name: bounce;
+.modal-show {
+	-webkit-animation-name: open;
+			animation-name: open;
 	-webkit-animation-duration: 0.6s;
 			animation-duration: 0.6s;
-}*/
+}
+
+@-webkit-keyframes open {
+	0% {
+	-webkit-transform: scale(0);
+			transform: scale(0);
+	/*-webkit-transform: translateX(-20px);
+			transform: translateX(-20px);*/
+	}
+	70% {
+	-webkit-transform: scale(0.25);
+			transform: scale(0.25);
+	}
+	90% {
+	-webkit-transform: scale(0.5);
+			transform: scale(0.5);
+	}
+	100% {
+	-webkit-transform: scale(1);
+			transform: scale(1);
+	}
+}
+
+@keyframes open {
+	0% {
+	-webkit-transform: scale(0);
+			transform: scale(0);
+	/*-webkit-transform: translateX(-20px);
+			transform: translateX(-20px);*/
+	}
+	70% {
+	-webkit-transform: scale(0.25);
+			transform: scale(0.25);
+	}
+	90% {
+	-webkit-transform: scale(0.5);
+			transform: scale(0.5);
+	}
+	100% {
+	-webkit-transform: scale(1);
+			transform: scale(1);
+	}
+}
 
 .modal-close {
 	display: none;
-	-webkit-animation-name: bounce;
-			animation-name: bounce;
+	/*-webkit-animation-name: close;
+			animation-name: close;
 	-webkit-animation-duration: 0.6s;
-			animation-duration: 0.6s;
+			animation-duration: 0.6s;*/
 }
 
-@-webkit-keyframes bounce {
+/*@-webkit-keyframes close {
 	0% {
 	-webkit-transform: scale(1);
-			transform: scale(1);
+			transform: scale(1);*/
 	/*-webkit-transform: translateX(-20px);
 			transform: translateX(-20px);*/
+	/*}
+	70% {
+	-webkit-transform: scale(0.5);
+			transform: scale(0.5);
 	}
+	90% {
+	-webkit-transform: scale(0.25);
+			transform: scale(0.55);
+	}
+	100% {
+	-webkit-transform: scale(0);
+			transform: scale(0);
+	}
+}*/
+
+/*@keyframes close {
+	0% {
+	-webkit-transform: scale(1);
+			transform: scale(1);*/
+	/*-webkit-transform: translateX(-20px);
+			transform: translateX(-20px);*/
+	/*}
 	70% {
 	-webkit-transform: scale(0.5);
 			transform: scale(0.5);
@@ -1807,28 +1894,7 @@ input[type="radio"].visually-hidden {
 	-webkit-transform: scale(0);
 			transform: scale(0);
 	}
-}
-
-@keyframes bounce {
-	0% {
-	-webkit-transform: scale(1);
-			transform: scale(1);
-	/*-webkit-transform: translateX(-20px);
-			transform: translateX(-20px);*/
-	}
-	70% {
-	-webkit-transform: scale(0.5);
-			transform: scale(0.5);
-	}
-	90% {
-	-webkit-transform: scale(0.25);
-			transform: scale(0.25);
-	}
-	100% {
-	-webkit-transform: scale(0);
-			transform: scale(0);
-	}
-}
+}*/
 
 .modal-error {
 	-webkit-animation-name: shake;

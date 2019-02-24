@@ -21,6 +21,7 @@ try {
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.toggle("modal-close");
+    popup.classList.add("modal-show");
     popup.classList.remove("modal-error");
     if (storageArrival || storageDeparture) {
         arrival.value = storageArrival;

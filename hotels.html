@@ -14,19 +14,25 @@
 		<div class="container">
 		<!-- Шапка сайта и главное меню -->
 		<header class="main-header">
-			<nav class="main-navigation" aria-label="Навигация по странице">
-				<ul class="main-navigation-items">
+
+			<p class="logo"> <!--tabindex="0" если будет нужен-->
+				<a href="index.html">
+					<img src="img/logo.svg" width="140" height="72" alt="Логотип сайта">
+				</a>
+			</p>
+
+			<nav class="main-navigation" aria-label="Главная навигация сайта">
+				<ul class="main-navigation-items left-panel">
 					<li class="navigation-item info" aria-label="Информация о Седоне"><a href="index.html">Информация</a></li>
 					<li class="navigation-item gallery" aria-label="Фотогалерея"><a href="gallery.html">Фото и видео</a></li>
-					<li class="navigation-item logo" aria-label="Логотип сайта и ссылка на главную страницу">
-						<a class="index-page-link" href="index.html">
-							<img src="img/logo.svg" width="140" height="71" alt="Логотип сайта">
-						</a>
-					</li>
+				</ul>
+				
+				<ul class="main-navigation-items right-panel">
 					<li class="navigation-item map" aria-label="Седона на карте"><a href="map.html">Карта штата</a></li>
 					<li class="navigation-item hotels" aria-label="Проживание"><a href="hotels.html" class="active-page">Гостиницы</a></li>
 				</ul>
 			</nav>
+
 		</header>
 		<!-- Контент страницы -->
 		<main >
